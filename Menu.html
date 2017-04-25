@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pizza Place - Menu</title>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="StyleSheetMenu.css">
+
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["rev"].value;
+    var y = document.forms["myForm"]["fname"].value;
+    var z = document.forms["myForm"]["email"].value;
+    if (x == null || y == null || z == null) {
+        alert("All fields must be must be filled out");
+        return false;
+    }
+}
+</script>
+
+
+
+</head>
+<body>
+<h1>-Pizza Place-</h1>
+<h2>999 N Eastern, Chicago, IL, 60630 - (773) 555 4567</h2>
+
+
+<div class="container">
+
+  <p>Check out the best Pizza in Chicago!</p>            
+  <div class="row">
+    <div class="col-md-4">
+<label for="deep">Deep Dish $15.99</label>
+<br>
+
+         <div class="grow">
+         <div class="imgWrap">
+        <img src="http://www.seriouseats.com/images/2014/05/20140525--best-deep-dish-pizza-art-of-pizza-2.jpg" alt="http://clipartsign.com/upload/2015/12/03/bake-a-pizza-clipart-clipart.jpeg" style="width:250px;height:250px">
+          <p class="imgDescription">Pizza of the year! Come and get it while it's hot!</p>
+</div>
+         </div>
+
+    </div>
+    <div class="col-md-4">
+<label for="tossed">Hand Tossed $14.99</label>
+<br>
+
+
+         <div class="grow"> 
+         <div class="imgWrap">
+        <img src="http://o.aolcdn.com/dims-shared/dims3/GLOB/crop/511x280+0+10/resize/604x327!/format/jpg/quality/85/http://o.aolcdn.com/hss/storage/adam/5d384269aacfde6291484a00799962e4/pizza.jpg" alt="http://clipartsign.com/upload/2015/12/03/bake-a-pizza-clipart-clipart.jpeg" style="width:250px;height:250px">
+        <p class="imgDescription">Deliscous pizza, you have to order this!</p>
+</div>
+        </div>
+
+    </div>
+    <div class="col-md-4">
+<label for="thin">Thin Crust $13.99</label>
+<br>
+ 
+        <div class="grow"> 
+        <div class="imgWrap"> 
+        <img src="http://blog.mlive.com/great-tastes/2009/06/large_pizza10.jpg" alt="http://clipartsign.com/upload/2015/12/03/bake-a-pizza-clipart-clipart.jpeg" style="width:250px;height:250px">
+        
+        <p class="imgDescription">The Best! Come and try this gem, you will not be disappointed!</p>
+</div>
+ </div>
+    </div>
+  </div>
+<br>
+<div class="row">
+    <div class="col-md-4">
+<label for="Garlic Sticks">Garlic Sticks $5.99</label>
+<br>
+
+        <div class="grow">
+        <div class="imgWrap"> 
+        <img src="http://farm2.static.flickr.com/1106/5113160066_9a44feea8c.jpg" alt="http://clipartsign.com/upload/2015/12/03/bake-a-pizza-clipart-clipart.jpeg" style="width:250px;height:250px">
+        <p class="imgDescription">Who doesn't enjoy some great garlic sticks?</p>
+</div>
+         </div>
+    </div>
+    <div class="col-md-4">
+<label for="Buffalo Wings">Buffalo Wings $6.99</label>
+<br>
+
+
+        <div class="grow">
+        <div class="imgWrap"> 
+        <img src="http://vitospizzafredericksburg.com/wp-content/uploads/2014/10/SmallBuffaloWings.jpg" alt="http://clipartsign.com/upload/2015/12/03/bake-a-pizza-clipart-clipart.jpeg" style="width:250px;height:250px">
+        <p class="imgDescription">Give me these wings everyday, and twice on Sunday!</p>
+</div>
+         </div>
+    </div>
+    <div class="col-md-4">
+<label for="Chocolate Lava Cake">Chocolate Lava Cake $4.99</label>
+<br>
+
+         <div class="grow"> 
+         <div class="imgWrap"> 
+        <img src="http://images.media-allrecipes.com/userphotos/720x405/967492.jpg" alt="http://clipartsign.com/upload/2015/12/03/bake-a-pizza-clipart-clipart.jpeg" style="width:250px;height:250px">
+        <p class="imgDescription">Everyone needs to finish it up with a choclatey cake!</p>
+</div>
+         </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<form name="MyForm" onsubmit="return validateForm()" method="post">
+<br>
+<label>Review:</label><br>
+<textarea name ="rev" rows="3" cols="100">
+</textarea><br>
+<label>Name:</label>
+<input type="text" name="fname"><br>
+<label>E-Mail:</label>
+<input type="text" name="email"><br>
+<br>
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>
